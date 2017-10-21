@@ -65,7 +65,6 @@ class RemoteStoreAlternative extends React.Component {
       return product.id !== row[0];
     });
 
-    console.log("delete: "+ products )
 
     this.setState({
       data: products

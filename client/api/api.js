@@ -54,7 +54,20 @@ export const getCart = () => {
   } catch (e) {
     return undefined;
   }
-}
+};
+
+export const deleteProduct = (productId) => {
+  return axios.post('/delete-product', { productId: productId})
+};
+
+export const addProduct = (product) => {
+  return axios.post('/add-product', { product: product})
+};
+
+export const editProduct = (fieldName,fieldValue,productId) => {
+  return axios.post('/edit-product', { fieldName: fieldName, fieldValue: fieldValue, productId: productId})
+};
+
 
 export const removeStorage = () => {
   window.onunload = function() {

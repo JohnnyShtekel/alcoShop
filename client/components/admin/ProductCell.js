@@ -23,7 +23,6 @@ class ProductCell extends React.Component {
       mode: 'checkbox',
       cliclToSelct: true
     };
-    console.log( " prop " +this.props.data )
     return (
       <BootstrapTable data={ this.props.data }
                       selectRow={ selectRow }
@@ -40,6 +39,8 @@ class ProductCell extends React.Component {
         <TableHeaderColumn dataField='id' isKey={ true }>Product ID</TableHeaderColumn>
         <TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
         <TableHeaderColumn dataField='price' dataSort>Product Price</TableHeaderColumn>
+        <TableHeaderColumn dataField='image'>Product Image</TableHeaderColumn>
+        <TableHeaderColumn dataField='detail'>Product Details</TableHeaderColumn>
       </BootstrapTable>
     );
   }
