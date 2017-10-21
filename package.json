@@ -31,6 +31,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.3.0",
     "react-bootstrap": "^0.31.3",
+    "react-bootstrap-table": "^4.1.0",
     "react-dom": "^15.3.0",
     "react-loading-animation": "^1.1.0",
     "react-progress-bar-plus": "^1.2.0",

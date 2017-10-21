@@ -4,7 +4,7 @@ import { Route, Router, IndexRoute, hashHistory } from 'react-router';
 import Main from '../components/Main.js';
 import ListProducts from '../components/ListProducts.js';
 import Cart from '../components/Cart.js';
-import MainAdmin from '../components/MainAdmin';
+import MainAdmin from '../components/admin/MainAdmin';
 
 const Routes = () => {
   return (

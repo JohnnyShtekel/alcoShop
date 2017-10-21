@@ -2,12 +2,11 @@ import React from 'react';
 import ProgressBar from 'react-progress-bar-plus';
 
 import 'react-progress-bar-plus/lib/progress-bar.css';
-import '../components/main.css';
+import '../main.css';
 import Login from './Login'
-import Menu from './Menu'
-import { login } from '../api/api.js';
-import Main from "./Main";
-
+import { login } from '../../api/api.js';
+import AdminMenu from "./AdminMenu";
+import RemoteStoreAlternative from './AdminProductTableControl'
 class MainAdmin extends React.Component {
 
     constructor(props) {
@@ -80,7 +79,10 @@ render() {
             return (
                 <div>
                     <ProgressBar percent={100} />
-                    <Main/>
+                    <AdminMenu/>
+                    <div className='main-wrapper'>
+                      <RemoteStoreAlternative/>
+                    </div>
                 </div>
             );
         }

@@ -5,6 +5,7 @@ import { getProducts, getCart, setProducts, setCart } from '../api/api.js';
 import { normalString } from '../helpers/slug.js';
 import Products from '../components/Products.js';
 import ProductDetail from '../components/ProductDetail.js';
+import CarouselMenu from '../components/Carousels.js';
 
 class ListProducts extends React.Component {
   constructor(props) {
@@ -117,6 +118,7 @@ class ListProducts extends React.Component {
     }
 
     if (this.props.params && this.props.params.name) {
+      console.log("1");
       let productName = normalString(this.props.params.name);
       return (
         <div className="container-mini">
@@ -129,6 +131,7 @@ class ListProducts extends React.Component {
         </div>
       );
     } else if (this.props.params && this.props.params.categoryname) {
+      console.log("2");
       let categoryName = this.props.params.categoryname;
       return (
         <div className="container-mini">
@@ -141,13 +144,16 @@ class ListProducts extends React.Component {
         </div>
       );
     } else {
+      console.log("3");
       return (
+          <div><CarouselMenu/>
         <div className='container-mini'>
           {query && <p className='result'>{`The Result of Searching Query "${query}"`}</p>}
           {products.length > 0 ? products.map(product => (
             <Products key={product.id} product={product}
               onLike={this.onLikeClick} addtoCart={this.addtoCart} />)) :
             <h3 className='not-found text-center'>Sorry... We can not found them :(</h3>}
+        </div>
         </div>
       );
     }

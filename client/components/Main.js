@@ -5,7 +5,7 @@ import Menu from '../components/Menu.js';
 import 'react-progress-bar-plus/lib/progress-bar.css';
 import '../components/main.css';
 import { getCategories } from '../api/api.js';
-import CarouselMenu from './Carousels'
+
 
 
 class Main extends React.Component {
@@ -59,7 +59,6 @@ class Main extends React.Component {
       <div>
         <ProgressBar percent={100} />
         <Menu onSearch={this.handleSearch.bind(this)} categories={this.state.categories} ></Menu>
-          <CarouselMenu/>
         <div className='main-wrapper'>
           {this.props.children}
         </div>
