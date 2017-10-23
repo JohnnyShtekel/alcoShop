@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd5afbce-3e47-4d92-9e25-a09bab8634af" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.babelrc" afterPath="$PROJECT_DIR$/.babelrc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/api/api.js" afterPath="$PROJECT_DIR$/client/api/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/admin/AdminProductTableControl.js" afterPath="$PROJECT_DIR$/client/components/admin/AdminProductTableControl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/components/admin/ProductCell.js" afterPath="$PROJECT_DIR$/client/components/admin/ProductCell.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
